@@ -1,0 +1,3 @@
+coq
+-no-install
+
