@@ -1,4 +1,4 @@
-open FromCoq
+include module type of FromCoq
 
 val (@@) : ('a -> 'b) -> 'a -> 'b
 val ($) : ('b -> 'c) -> ('a -> 'b) -> ('a -> 'c)
