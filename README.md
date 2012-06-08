@@ -1,7 +1,7 @@
 ocaml_util
 ==========
 
-my utility module for ocaml
+A utility module for ocaml. Some properties of functions are proved by Coq.
 
 
 BUILD
