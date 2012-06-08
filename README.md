@@ -26,5 +26,5 @@ Verification (optional)
 API Documents
 -------------
 
-- coqdoc: http://yoshihiro503.github.com/ocaml_util/coqdoc/
-- ocamldoc: http://yoshihiro503.github.com/ocaml_util/ocamldoc/
+* [coqdoc](http://yoshihiro503.github.com/ocaml_util/coqdoc/)
+* [ocamldoc](http://yoshihiro503.github.com/ocaml_util/ocamldoc/)
