@@ -13,10 +13,10 @@ OCAMLLIBS:=-I .
 ##########################
 
 CAMLLIB:=$(shell $(CAMLBIN)ocamlc.opt -where)
-CAMLC:=$(CAMLBIN)ocamlc.opt -c -rectypes
-CAMLOPTC:=$(CAMLBIN)ocamlopt.opt -c -rectypes
-CAMLLINK:=$(CAMLBIN)ocamlc.opt -rectypes
-CAMLOPTLINK:=$(CAMLBIN)ocamlopt.opt -rectypes
+CAMLC:=$(CAMLBIN)ocamlc.opt -c
+CAMLOPTC:=$(CAMLBIN)ocamlopt.opt -c
+CAMLLINK:=$(CAMLBIN)ocamlc.opt
+CAMLOPTLINK:=$(CAMLBIN)ocamlopt.opt
 
 ###################################
 #                                 #
@@ -85,6 +85,11 @@ archclean:
 -include $(MLFILES:.ml=.ml.d)
 .SECONDARY: $(MLFILES:.ml=.ml.d)
 
+
+#ocamldoc (HTML)
+html: fromCoq.cmi util.cmi
+	mkdir -p doc
+	ocamldoc -d doc -html fromCoq.mli util.mli
 
 
 # Verification (optional)
