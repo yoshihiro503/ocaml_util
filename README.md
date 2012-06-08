@@ -1,7 +1,14 @@
 ocaml_util
 ==========
 
-A utility module for ocaml. Some properties of functions are proved by Coq.
+A utility module for [OCaml](http://caml.inria.fr/).
+Some properties of functions are proved by [Coq](http://coq.inria.fr/).
+
+
+Requirements
+------------
+
+* OCaml >= 3.12
 
 
 Build
