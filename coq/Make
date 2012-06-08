@@ -3,3 +3,5 @@
 -custom "$(COQC) Util.v" Util.vo fromCoq.ml
 -custom "$(COQC) Util.v" Util.vo fromCoq.mli
 Util.v
+May.v
+Extraction.v

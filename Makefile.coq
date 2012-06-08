@@ -99,7 +99,17 @@ PP:=-pp "$(CAMLP4BIN)$(CAMLP4)o -I $(CAMLLIB) -I . $(COQSRCLIBS) $(CAMLP4EXTEND)
 ###################################
 
 
-all: coq
+all: html\
+  coq
+###################
+#                 #
+# Custom targets. #
+#                 #
+###################
+
+html: 
+	cd coq; $(MAKE) html
+
 ###################
 #                 #
 # Subdirectories. #
@@ -127,6 +137,7 @@ clean:
 	rm -f $(CMOFILES) $(CMIFILES) $(CMXFILES) $(CMXSFILES) $(OFILES) $(VOFILES) $(VIFILES) $(GFILES) $(MLFILES:.ml=.cmo) $(MLFILES:.ml=.cmx) *~
 	rm -f all.ps all-gal.ps all.pdf all-gal.pdf all.glob $(VFILES:.v=.glob) $(HTMLFILES) $(GHTMLFILES) $(VFILES:.v=.tex) $(VFILES:.v=.g.tex) $(VFILES:.v=.v.d)
 	- rm -rf html
+	- rm -f html
 	(cd coq ; $(MAKE) clean)
 
 archclean:

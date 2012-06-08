@@ -24,8 +24,11 @@ CAMLOPTLINK:=$(CAMLBIN)ocamlopt.opt
 #                                 #
 ###################################
 
-MLFILES:=fromCoq.ml\
-  util.ml
+MLFILES:= \
+	fromCoq.ml \
+	Datatypes.ml \
+	May.ml \
+	util.ml
 CMOFILES:=$(MLFILES:.ml=.cmo)
 CMOFILES0:=$(filter-out ,$(CMOFILES))
 CMIFILES:=$(MLFILES:.ml=.cmi)
@@ -86,10 +89,13 @@ archclean:
 .SECONDARY: $(MLFILES:.ml=.ml.d)
 
 
-#ocamldoc (HTML)
+#API Documents (ocamldoc,coqdoc)
 html: fromCoq.cmi util.cmi
-	mkdir -p doc
-	ocamldoc -d doc -html fromCoq.mli util.mli
+	mkdir -p ocamldoc
+	mkdir -p coqdoc
+	ocamldoc -d ocamldoc -html fromCoq.mli util.mli
+	$(MAKE) -f Makefile.coq html
+	cp coq/html/* coqdoc/
 
 
 # Verification (optional)
@@ -99,4 +105,4 @@ Makefile.coq: Make.coq
 
 verification: Makefile.coq
 	$(MAKE) -f Makefile.coq
-	mv coq/fromCoq.ml coq/fromCoq.mli ./
+	cp coq/*.ml coq/*.mli ./
