@@ -19,4 +19,5 @@ VERIFICATION (OPTIONAL)
 API DOCUMENT
 ============
 
-- ocamldoc: http://yoshihiro503.github.com/ocaml_util/
+- coqdoc: http://yoshihiro503.github.com/ocaml_util/coqdoc/
+- ocamldoc: http://yoshihiro503.github.com/ocaml_util/ocamldoc/
