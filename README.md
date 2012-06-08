@@ -19,4 +19,4 @@ VERIFICATION (OPTIONAL)
 API DOCUMENT
 ============
 
-        - ocamldoc: http://yoshihiro503.github.com/ocaml_util/
+- ocamldoc: http://yoshihiro503.github.com/ocaml_util/
