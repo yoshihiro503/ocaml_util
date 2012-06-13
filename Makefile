@@ -28,6 +28,10 @@ MLFILES:= \
 	fromCoq.ml \
 	Datatypes.ml \
 	May.ml \
+	Logic.ml \
+	Specif.ml \
+	List.ml \
+	Streams.ml \
 	util.ml
 CMOFILES:=$(MLFILES:.ml=.cmo)
 CMOFILES0:=$(filter-out ,$(CMOFILES))
@@ -90,10 +94,10 @@ archclean:
 
 
 #API Documents (ocamldoc,coqdoc)
-html: fromCoq.cmi util.cmi
+html: $(CMIFILES)
 	mkdir -p ocamldoc
 	mkdir -p coqdoc
-	ocamldoc -d ocamldoc -html fromCoq.mli util.mli
+	ocamldoc -d ocamldoc -html $(MLFILES)
 	$(MAKE) -f Makefile.coq html
 	cp coq/html/* coqdoc/
 
