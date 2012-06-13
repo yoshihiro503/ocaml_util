@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Specif.html">
+<link rel="next" href="Streams.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="FromCoq" rel="Chapter" href="FromCoq.html">
+<link title="Datatypes" rel="Chapter" href="Datatypes.html">
+<link title="May" rel="Chapter" href="May.html">
+<link title="Logic" rel="Chapter" href="Logic.html">
+<link title="Specif" rel="Chapter" href="Specif.html">
+<link title="List" rel="Chapter" href="List.html">
+<link title="Streams" rel="Chapter" href="Streams.html">
+<link title="Util" rel="Chapter" href="Util.html"><title>List</title>
+</head>
+<body>
+<div class="navbar"><a href="Specif.html">Previous</a>
+&nbsp;<a href="index.html">Up</a>
+&nbsp;<a href="Streams.html">Next</a>
+</div>
+<center><h1>Module <a href="type_List.html">List</a></h1></center>
+<br>
+<pre><span class="keyword">module</span> List: <code class="code">sig</code> <a href="List.html">..</a> <code class="code">end</code></pre>val hd : 'a1 -&gt; 'a1 list -&gt; 'a1 *<br>
+<hr width="100%">
+<pre><span id="TYPE__"><span class="keyword">type</span> <code class="type"></code>__</span> = <code class="type">Obj.t</code> </pre>
+
+<pre><span id="VAL__"><span class="keyword">val</span> <a href="code_VALList.__.html">__</a></span> : <code class="type">Obj.t</code></pre><br>
+val hd : 'a1 -&gt; 'a1 list -&gt; 'a1 *<br>
+<pre><span id="VALhd"><span class="keyword">val</span> <a href="code_VALList.hd.html">hd</a></span> : <code class="type">'a -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a</code></pre><br>
+val hd_error : 'a1 list -&gt; 'a1 option *<br>
+<pre><span id="VALhd_error"><span class="keyword">val</span> <a href="code_VALList.hd_error.html">hd_error</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><br>
+val tl : 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALtl"><span class="keyword">val</span> <a href="code_VALList.tl.html">tl</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val destruct_list : 'a1 list -&gt; ('a1, 'a1 list) sigT sumor *<br>
+<pre><span id="VALdestruct_list"><span class="keyword">val</span> <a href="code_VALList.destruct_list.html">destruct_list</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a, 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a>) <a href="Specif.html#TYPEsigT">Specif.sigT</a> <a href="Specif.html#TYPEsumor">Specif.sumor</a></code></pre><br>
+val in_dec : ('a1 -&gt; 'a1 -&gt; sumbool) -&gt; 'a1 -&gt; 'a1 list -&gt; sumbool *<br>
+<pre><span id="VALin_dec"><span class="keyword">val</span> <a href="code_VALList.in_dec.html">in_dec</a></span> : <code class="type">('a -> 'b -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a>) -> 'b -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a></code></pre><br>
+val nth : nat -&gt; 'a1 list -&gt; 'a1 -&gt; 'a1 *<br>
+<pre><span id="VALnth"><span class="keyword">val</span> <a href="code_VALList.nth.html">nth</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a -> 'a</code></pre><br>
+val nth_ok : nat -&gt; 'a1 list -&gt; 'a1 -&gt; bool *<br>
+<pre><span id="VALnth_ok"><span class="keyword">val</span> <a href="code_VALList.nth_ok.html">nth_ok</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a></code></pre><br>
+val nth_in_or_default : nat -&gt; 'a1 list -&gt; 'a1 -&gt; sumbool *<br>
+<pre><span id="VALnth_in_or_default"><span class="keyword">val</span> <a href="code_VALList.nth_in_or_default.html">nth_in_or_default</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a></code></pre><br>
+val nth_error : 'a1 list -&gt; nat -&gt; 'a1 coq_Exc *<br>
+<pre><span id="VALnth_error"><span class="keyword">val</span> <a href="code_VALList.nth_error.html">nth_error</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><br>
+val nth_default : 'a1 -&gt; 'a1 list -&gt; nat -&gt; 'a1 *<br>
+<pre><span id="VALnth_default"><span class="keyword">val</span> <a href="code_VALList.nth_default.html">nth_default</a></span> : <code class="type">'a -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a</code></pre><br>
+val remove : ('a1 -&gt; 'a1 -&gt; sumbool) -&gt; 'a1 -&gt; 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALremove"><span class="keyword">val</span> <a href="code_VALList.remove.html">remove</a></span> : <code class="type">('a -> 'b -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a>) -> 'a -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val last : 'a1 list -&gt; 'a1 -&gt; 'a1 *<br>
+<pre><span id="VALlast"><span class="keyword">val</span> <a href="code_VALList.last.html">last</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a -> 'a</code></pre><br>
+val removelast : 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALremovelast"><span class="keyword">val</span> <a href="code_VALList.removelast.html">removelast</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val exists_last : 'a1 list -&gt; ('a1 list, 'a1) sigT *<br>
+<pre><span id="VALexists_last"><span class="keyword">val</span> <a href="code_VALList.exists_last.html">exists_last</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a <a href="Datatypes.html#TYPElist">Datatypes.list</a>, 'a) <a href="Specif.html#TYPEsigT">Specif.sigT</a></code></pre><br>
+val count_occ : ('a1 -&gt; 'a1 -&gt; sumbool) -&gt; 'a1 list -&gt; 'a1 -&gt; nat *<br>
+<pre><span id="VALcount_occ"><span class="keyword">val</span> <a href="code_VALList.count_occ.html">count_occ</a></span> : <code class="type">('a -> 'b -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a></code></pre><br>
+val rev : 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALrev"><span class="keyword">val</span> <a href="code_VALList.rev.html">rev</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val rev_append : 'a1 list -&gt; 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALrev_append"><span class="keyword">val</span> <a href="code_VALList.rev_append.html">rev_append</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val rev' : 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALrev'"><span class="keyword">val</span> <a href="code_VALList.rev'.html">rev'</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val list_eq_dec :
+    ('a1 -&gt; 'a1 -&gt; sumbool) -&gt; 'a1 list -&gt; 'a1 list -&gt; sumbool *<br>
+<pre><span id="VALlist_eq_dec"><span class="keyword">val</span> <a href="code_VALList.list_eq_dec.html">list_eq_dec</a></span> : <code class="type">('a -> 'b -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a>) -><br>       'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Specif.html#TYPEsumbool">Specif.sumbool</a></code></pre><br>
+val map : ('a1 -&gt; 'a2) -&gt; 'a1 list -&gt; 'a2 list *<br>
+<pre><span id="VALmap"><span class="keyword">val</span> <a href="code_VALList.map.html">map</a></span> : <code class="type">('a -> 'b) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val flat_map : ('a1 -&gt; 'a2 list) -&gt; 'a1 list -&gt; 'a2 list *<br>
+<pre><span id="VALflat_map"><span class="keyword">val</span> <a href="code_VALList.flat_map.html">flat_map</a></span> : <code class="type">('a -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val fold_left : ('a1 -&gt; 'a2 -&gt; 'a1) -&gt; 'a2 list -&gt; 'a1 -&gt; 'a1 *<br>
+<pre><span id="VALfold_left"><span class="keyword">val</span> <a href="code_VALList.fold_left.html">fold_left</a></span> : <code class="type">('a -> 'b -> 'a) -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a -> 'a</code></pre><br>
+val fold_right : ('a2 -&gt; 'a1 -&gt; 'a1) -&gt; 'a1 -&gt; 'a2 list -&gt; 'a1 *<br>
+<pre><span id="VALfold_right"><span class="keyword">val</span> <a href="code_VALList.fold_right.html">fold_right</a></span> : <code class="type">('a -> 'b -> 'b) -> 'b -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'b</code></pre><br>
+val list_power : 'a1 list -&gt; 'a2 list -&gt; ('a1, 'a2) prod list list *<br>
+<pre><span id="VALlist_power"><span class="keyword">val</span> <a href="code_VALList.list_power.html">list_power</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -><br>       'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a, 'b) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val existsb : ('a1 -&gt; bool) -&gt; 'a1 list -&gt; bool *<br>
+<pre><span id="VALexistsb"><span class="keyword">val</span> <a href="code_VALList.existsb.html">existsb</a></span> : <code class="type">('a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a></code></pre><br>
+val forallb : ('a1 -&gt; bool) -&gt; 'a1 list -&gt; bool *<br>
+<pre><span id="VALforallb"><span class="keyword">val</span> <a href="code_VALList.forallb.html">forallb</a></span> : <code class="type">('a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a></code></pre><br>
+val filter : ('a1 -&gt; bool) -&gt; 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALfilter"><span class="keyword">val</span> <a href="code_VALList.filter.html">filter</a></span> : <code class="type">('a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val find : ('a1 -&gt; bool) -&gt; 'a1 list -&gt; 'a1 option *<br>
+<pre><span id="VALfind"><span class="keyword">val</span> <a href="code_VALList.find.html">find</a></span> : <code class="type">('a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a>) -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><br>
+val partition :
+    ('a1 -&gt; bool) -&gt; 'a1 list -&gt; ('a1 list, 'a1 list) prod *<br>
+<pre><span id="VALpartition"><span class="keyword">val</span> <a href="code_VALList.partition.html">partition</a></span> : <code class="type">('a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a>) -><br>       'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a <a href="Datatypes.html#TYPElist">Datatypes.list</a>, 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a>) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a></code></pre><br>
+val split : ('a1, 'a2) prod list -&gt; ('a1 list, 'a2 list) prod *<br>
+<pre><span id="VALsplit"><span class="keyword">val</span> <a href="code_VALList.split.html">split</a></span> : <code class="type">('a, 'b) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a> -><br>       ('a <a href="Datatypes.html#TYPElist">Datatypes.list</a>, 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a>) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a></code></pre><br>
+val combine : 'a1 list -&gt; 'a2 list -&gt; ('a1, 'a2) prod list *<br>
+<pre><span id="VALcombine"><span class="keyword">val</span> <a href="code_VALList.combine.html">combine</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -><br>       'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a, 'b) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val list_prod : 'a1 list -&gt; 'a2 list -&gt; ('a1, 'a2) prod list *<br>
+<pre><span id="VALlist_prod"><span class="keyword">val</span> <a href="code_VALList.list_prod.html">list_prod</a></span> : <code class="type">'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -><br>       'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> ('a, 'b) <a href="Datatypes.html#TYPEprod">Datatypes.prod</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val firstn : nat -&gt; 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALfirstn"><span class="keyword">val</span> <a href="code_VALList.firstn.html">firstn</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val skipn : nat -&gt; 'a1 list -&gt; 'a1 list *<br>
+<pre><span id="VALskipn"><span class="keyword">val</span> <a href="code_VALList.skipn.html">skipn</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val seq : nat -&gt; nat -&gt; nat list *<br>
+<pre><span id="VALseq"><span class="keyword">val</span> <a href="code_VALList.seq.html">seq</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> <a href="Datatypes.html#TYPElist">Datatypes.list</a></code></pre><br>
+val coq_Forall_rect :
+    'a2 -&gt; ('a1 -&gt; 'a1 list -&gt; __ -&gt; 'a2) -&gt; 'a1 list -&gt; 'a2 *<br>
+<pre><span id="VALcoq_Forall_rect"><span class="keyword">val</span> <a href="code_VALList.coq_Forall_rect.html">coq_Forall_rect</a></span> : <code class="type">'a -> ('b -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> Obj.t -> 'a) -> 'b <a href="Datatypes.html#TYPElist">Datatypes.list</a> -> 'a</code></pre></body></html>

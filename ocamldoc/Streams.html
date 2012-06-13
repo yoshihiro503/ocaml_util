@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<link rel="Start" href="index.html">
+<link rel="previous" href="List.html">
+<link rel="next" href="Util.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="FromCoq" rel="Chapter" href="FromCoq.html">
+<link title="Datatypes" rel="Chapter" href="Datatypes.html">
+<link title="May" rel="Chapter" href="May.html">
+<link title="Logic" rel="Chapter" href="Logic.html">
+<link title="Specif" rel="Chapter" href="Specif.html">
+<link title="List" rel="Chapter" href="List.html">
+<link title="Streams" rel="Chapter" href="Streams.html">
+<link title="Util" rel="Chapter" href="Util.html"><title>Streams</title>
+</head>
+<body>
+<div class="navbar"><a href="List.html">Previous</a>
+&nbsp;<a href="index.html">Up</a>
+&nbsp;<a href="Util.html">Next</a>
+</div>
+<center><h1>Module <a href="type_Streams.html">Streams</a></h1></center>
+<br>
+<pre><span class="keyword">module</span> Streams: <code class="code">sig</code> <a href="Streams.html">..</a> <code class="code">end</code></pre>val hd : 'a1 coq_Stream -&gt; 'a1 *<br>
+<hr width="100%">
+<pre><span id="TYPEcoq_Stream"><span class="keyword">type</span> <code class="type">'a</code> coq_Stream</span> = <code class="type">'a Streams.__coq_Stream Lazy.t</code> </pre>
+
+<br><code><span id="TYPE__coq_Stream"><span class="keyword">type</span> <code class="type">'a</code> __coq_Stream</span> = </code><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span class="constructor">Cons</span> <span class="keyword">of</span> <code class="type">'a * 'a <a href="Streams.html#TYPEcoq_Stream">coq_Stream</a></code></code></td>
+
+</tr></table>
+
+
+<br>
+val hd : 'a1 coq_Stream -&gt; 'a1 *<br>
+<pre><span id="VALhd"><span class="keyword">val</span> <a href="code_VALStreams.hd.html">hd</a></span> : <code class="type">'a Streams.__coq_Stream Lazy.t -> 'a</code></pre><br>
+val tl : 'a1 coq_Stream -&gt; 'a1 coq_Stream *<br>
+<pre><span id="VALtl"><span class="keyword">val</span> <a href="code_VALStreams.tl.html">tl</a></span> : <code class="type">'a Streams.__coq_Stream Lazy.t -> 'a <a href="Streams.html#TYPEcoq_Stream">coq_Stream</a></code></pre><br>
+val coq_Str_nth_tl : nat -&gt; 'a1 coq_Stream -&gt; 'a1 coq_Stream *<br>
+<pre><span id="VALcoq_Str_nth_tl"><span class="keyword">val</span> <a href="code_VALStreams.coq_Str_nth_tl.html">coq_Str_nth_tl</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -><br>       'a Streams.__coq_Stream Lazy.t -> 'a Streams.__coq_Stream Lazy.t</code></pre><br>
+val coq_Str_nth : nat -&gt; 'a1 coq_Stream -&gt; 'a1 *<br>
+<pre><span id="VALcoq_Str_nth"><span class="keyword">val</span> <a href="code_VALStreams.coq_Str_nth.html">coq_Str_nth</a></span> : <code class="type"><a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a Streams.__coq_Stream Lazy.t -> 'a</code></pre><br>
+val map : ('a1 -&gt; 'a2) -&gt; 'a1 coq_Stream -&gt; 'a2 coq_Stream *<br>
+<pre><span id="VALmap"><span class="keyword">val</span> <a href="code_VALStreams.map.html">map</a></span> : <code class="type">('a -> 'b) -> 'a Streams.__coq_Stream Lazy.t -> 'b <a href="Streams.html#TYPEcoq_Stream">coq_Stream</a></code></pre><br>
+val const : 'a1 -&gt; 'a1 coq_Stream *<br>
+<pre><span id="VALconst"><span class="keyword">val</span> <a href="code_VALStreams.const.html">const</a></span> : <code class="type">'a -> 'a <a href="Streams.html#TYPEcoq_Stream">coq_Stream</a></code></pre><br>
+val zipWith :
+    ('a1 -&gt; 'a2 -&gt; 'a3) -&gt; 'a1 coq_Stream -&gt; 'a2 coq_Stream -&gt; 'a3 coq_Stream *<br>
+<pre><span id="VALzipWith"><span class="keyword">val</span> <a href="code_VALStreams.zipWith.html">zipWith</a></span> : <code class="type">('a -> 'b -> 'c) -><br>       'a Streams.__coq_Stream Lazy.t -><br>       'b Streams.__coq_Stream Lazy.t -> 'c <a href="Streams.html#TYPEcoq_Stream">coq_Stream</a></code></pre></body></html>

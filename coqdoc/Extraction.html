@@ -20,12 +20,14 @@
 
 <div class="code">
 <span class="id" type="keyword">Require</span> <span class="id" type="keyword">Import</span> <a class="idref" href="Util.html#"><span class="id" type="library">Util</span></a>.<br/>
-<span class="id" type="keyword">Require</span> <a class="idref" href="May.html#"><span class="id" type="library">May</span></a>.<br/>
+<span class="id" type="keyword">Require</span> <a class="idref" href="May.html#"><span class="id" type="library">May</span></a> <a class="idref" href="http://coq.inria.fr/distrib/8.3pl2/stdlib/Coq.Lists.List.html#"><span class="id" type="library">List</span></a> <a class="idref" href="http://coq.inria.fr/distrib/8.3pl2/stdlib/Coq.Lists.Streams.html#"><span class="id" type="library">Streams</span></a>.<br/>
 
 <br/>
 <span class="id" type="var">Extraction</span> <span class="id" type="var">Language</span> <span class="id" type="var">Ocaml</span>.<br/>
 <span class="id" type="var">Extraction</span> "fromCoq" <span class="id" type="var">id</span> <span class="id" type="var">const</span> <span class="id" type="var">sum</span>.<br/>
-<span class="id" type="var">Extraction</span> <span class="id" type="var">Library</span> <span class="id" type="var">May</span>.<br/>
+<span class="id" type="var">Recursive Extraction</span> <span class="id" type="var">Library</span> <span class="id" type="var">May</span>.<br/>
+<span class="id" type="var">Recursive Extraction</span> <span class="id" type="var">Library</span> <span class="id" type="var">List</span>.<br/>
+<span class="id" type="var">Recursive Extraction</span> <span class="id" type="var">Library</span> <span class="id" type="var">Streams</span>.<br/>
 </div>
 </div>
 

@@ -8,6 +8,12 @@
 <link title="Index of values" rel=Appendix href="index_values.html">
 <link title="Index of modules" rel=Appendix href="index_modules.html">
 <link title="FromCoq" rel="Chapter" href="FromCoq.html">
+<link title="Datatypes" rel="Chapter" href="Datatypes.html">
+<link title="May" rel="Chapter" href="May.html">
+<link title="Logic" rel="Chapter" href="Logic.html">
+<link title="Specif" rel="Chapter" href="Specif.html">
+<link title="List" rel="Chapter" href="List.html">
+<link title="Streams" rel="Chapter" href="Streams.html">
 <link title="Util" rel="Chapter" href="Util.html"><title></title>
 </head>
 <body>
@@ -17,7 +23,34 @@
 <a href="index_modules.html">Index of modules</a><br>
 <br/><br>
 <table class="indextable">
-<tr><td><a href="FromCoq.html">FromCoq</a></td><td></td></tr>
+<tr><td><a href="FromCoq.html">FromCoq</a></td><td><div class="info">
+val id : 'a1 -&gt; 'a1 *
+</div>
+</td></tr>
+<tr><td><a href="Datatypes.html">Datatypes</a></td><td><div class="info">
+val unit_rect : 'a1 -&gt; coq_unit -&gt; 'a1 *
+</div>
+</td></tr>
+<tr><td><a href="May.html">May</a></td><td><div class="info">
+val map : ('a1 -&gt; 'a2) -&gt; 'a1 t -&gt; 'a2 t *
+</div>
+</td></tr>
+<tr><td><a href="Logic.html">Logic</a></td><td><div class="info">
+val coq_True_rect : 'a1 -&gt; 'a1 *
+</div>
+</td></tr>
+<tr><td><a href="Specif.html">Specif</a></td><td><div class="info">
+val sig_rect : ('a1 -&gt; __ -&gt; 'a2) -&gt; 'a1 -&gt; 'a2 *
+</div>
+</td></tr>
+<tr><td><a href="List.html">List</a></td><td><div class="info">
+val hd : 'a1 -&gt; 'a1 list -&gt; 'a1 *
+</div>
+</td></tr>
+<tr><td><a href="Streams.html">Streams</a></td><td><div class="info">
+val hd : 'a1 coq_Stream -&gt; 'a1 *
+</div>
+</td></tr>
 <tr><td><a href="Util.html">Util</a></td><td></td></tr>
 </table>
 </body>
