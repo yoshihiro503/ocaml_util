@@ -10,8 +10,12 @@
 *.cmx
 *.cmxs
 *.cmxa
+*.ml.d
 
 #coq
 *.vo
 *.glob
 *.v.d
+
+coq/*.ml
+coq/*.mli
