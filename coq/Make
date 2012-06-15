@@ -4,4 +4,6 @@
 -custom "$(COQC) Util.v" Util.vo fromCoq.mli
 Util.v
 May.v
+CoqList.v
+CoqStreams.v
 Extraction.v

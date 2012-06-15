@@ -30,9 +30,11 @@ MLFILES:= \
 	May.ml \
 	Logic.ml \
 	Specif.ml \
-	List.ml \
-	Streams.ml \
-	util.ml
+	CoqList.ml \
+	CoqStreams.ml \
+	util.ml \
+	yString.ml \
+	yParser.ml
 CMOFILES:=$(MLFILES:.ml=.cmo)
 CMOFILES0:=$(filter-out ,$(CMOFILES))
 CMIFILES:=$(MLFILES:.ml=.cmi)
