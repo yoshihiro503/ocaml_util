@@ -134,7 +134,7 @@ let keyword w =
 
 let make_ident f =
   many1 (char_when f) >>= fun cs ->
-    return (YString.of_list cs)
+    return (StringUtil.of_list cs)
 
 let digit =
   char_when (function
@@ -143,7 +143,7 @@ let digit =
 
 let digits =
   many1 digit >>= fun cs ->
-  return (int_of_string (YString.of_list cs))
+  return (int_of_string (StringUtil.of_list cs))
 
 let int =
   opt (char '-') >>= fun minus ->
