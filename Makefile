@@ -33,8 +33,10 @@ MLFILES:= \
 	CoqList.ml \
 	CoqStreams.ml \
 	util.ml \
-	yString.ml \
-	yParser.ml
+	stringUtil.ml \
+	yParser.ml \
+	utf16.ml \
+	base64.ml
 CMOFILES:=$(MLFILES:.ml=.cmo)
 CMOFILES0:=$(filter-out ,$(CMOFILES))
 CMIFILES:=$(MLFILES:.ml=.cmi)
