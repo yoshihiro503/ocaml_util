@@ -6,6 +6,7 @@ val (|>) : 'a -> ('a -> 'b) -> 'b
 val println : string -> unit
 val tee : ('a -> 'b) -> 'a -> 'a
 val (!%) : ('a, unit, string) format -> 'a
+val slist : string -> ('a -> string) -> 'a list -> string
 
 type 'a may = 'a May.t
 val may : ('a -> 'b) -> 'a -> ('b, exn) sum

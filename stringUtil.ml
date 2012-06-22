@@ -13,3 +13,12 @@ let to_list s =
   in 
   iter 0
     
+let foldr f s a0 =
+  let rec iter i a =
+    if i >= 0 then
+      iter (i-1) (f s.[i] a)
+    else a
+  in
+  iter (String.length s - 1) a0
+
+
