@@ -5,7 +5,7 @@
 <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
 <link rel="Start" href="index.html">
 <link rel="previous" href="Logic.html">
-<link rel="next" href="List.html">
+<link rel="next" href="CoqList.html">
 <link rel="Up" href="index.html">
 <link title="Index of types" rel=Appendix href="index_types.html">
 <link title="Index of values" rel=Appendix href="index_values.html">
@@ -15,34 +15,28 @@
 <link title="May" rel="Chapter" href="May.html">
 <link title="Logic" rel="Chapter" href="Logic.html">
 <link title="Specif" rel="Chapter" href="Specif.html">
-<link title="List" rel="Chapter" href="List.html">
-<link title="Streams" rel="Chapter" href="Streams.html">
-<link title="Util" rel="Chapter" href="Util.html"><title>Specif</title>
+<link title="CoqList" rel="Chapter" href="CoqList.html">
+<link title="CoqStreams" rel="Chapter" href="CoqStreams.html">
+<link title="Util" rel="Chapter" href="Util.html">
+<link title="StringUtil" rel="Chapter" href="StringUtil.html">
+<link title="Utf16" rel="Chapter" href="Utf16.html">
+<link title="Base64" rel="Chapter" href="Base64.html"><title>Specif</title>
 </head>
 <body>
 <div class="navbar"><a href="Logic.html">Previous</a>
 &nbsp;<a href="index.html">Up</a>
-&nbsp;<a href="List.html">Next</a>
+&nbsp;<a href="CoqList.html">Next</a>
 </div>
 <center><h1>Module <a href="type_Specif.html">Specif</a></h1></center>
 <br>
-<pre><span class="keyword">module</span> Specif: <code class="code">sig</code> <a href="Specif.html">..</a> <code class="code">end</code></pre>val sig_rect : ('a1 -&gt; __ -&gt; 'a2) -&gt; 'a1 -&gt; 'a2 *<br>
-<hr width="100%">
+<pre><span class="keyword">module</span> Specif: <code class="code">sig</code> <a href="Specif.html">..</a> <code class="code">end</code></pre><hr width="100%">
 <pre><span id="TYPE__"><span class="keyword">type</span> <code class="type"></code>__</span> = <code class="type">Obj.t</code> </pre>
 
-<pre><span id="VAL__"><span class="keyword">val</span> <a href="code_VALSpecif.__.html">__</a></span> : <code class="type">Obj.t</code></pre><pre><span id="TYPEcoq_sig"><span class="keyword">type</span> <code class="type">'a</code> coq_sig</span> = <code class="type">'a</code> </pre>
+<pre><span id="TYPEcoq_sig"><span class="keyword">type</span> <code class="type">'a</code> coq_sig</span> = <code class="type">'a</code> </pre>
 
-<br>
-val sig_rect : ('a1 -&gt; __ -&gt; 'a2) -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALsig_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sig_rect.html">sig_rect</a></span> : <code class="type">('a -> Obj.t -> 'b) -> 'a -> 'b</code></pre><br>
-val sig_rec : ('a1 -&gt; __ -&gt; 'a2) -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALsig_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sig_rec.html">sig_rec</a></span> : <code class="type">('a -> Obj.t -> 'b) -> 'a -> 'b</code></pre><pre><span id="TYPEsig2"><span class="keyword">type</span> <code class="type">'a</code> sig2</span> = <code class="type">'a</code> </pre>
+<pre><span id="VALsig_rect"><span class="keyword">val</span> sig_rect</span> : <code class="type">('a -> Specif.__ -> 'b) -> 'a -> 'b</code></pre><pre><span id="VALsig_rec"><span class="keyword">val</span> sig_rec</span> : <code class="type">('a -> Specif.__ -> 'b) -> 'a -> 'b</code></pre><pre><span id="TYPEsig2"><span class="keyword">type</span> <code class="type">'a</code> sig2</span> = <code class="type">'a</code> </pre>
 
-<br>
-val sig2_rect : ('a1 -&gt; __ -&gt; __ -&gt; 'a2) -&gt; 'a1 sig2 -&gt; 'a2 *<br>
-<pre><span id="VALsig2_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sig2_rect.html">sig2_rect</a></span> : <code class="type">('a -> Obj.t -> Obj.t -> 'b) -> 'a -> 'b</code></pre><br>
-val sig2_rec : ('a1 -&gt; __ -&gt; __ -&gt; 'a2) -&gt; 'a1 sig2 -&gt; 'a2 *<br>
-<pre><span id="VALsig2_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sig2_rec.html">sig2_rec</a></span> : <code class="type">('a -> Obj.t -> Obj.t -> 'b) -> 'a -> 'b</code></pre><br><code><span id="TYPEsigT"><span class="keyword">type</span> <code class="type">('a, 'b)</code> sigT</span> = </code><table class="typetable">
+<pre><span id="VALsig2_rect"><span class="keyword">val</span> sig2_rect</span> : <code class="type">('a -> Specif.__ -> Specif.__ -> 'b) -> 'a <a href="Specif.html#TYPEsig2">sig2</a> -> 'b</code></pre><pre><span id="VALsig2_rec"><span class="keyword">val</span> sig2_rec</span> : <code class="type">('a -> Specif.__ -> Specif.__ -> 'b) -> 'a <a href="Specif.html#TYPEsig2">sig2</a> -> 'b</code></pre><br><code><span id="TYPEsigT"><span class="keyword">type</span> <code class="type">('a, 'b)</code> sigT</span> = </code><table class="typetable">
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
@@ -52,11 +46,7 @@ val sig2_rec : ('a1 -&gt; __ -&gt; __ -&gt; 'a2) -&gt; 'a1 sig2 -&gt; 'a2 *<br>
 </tr></table>
 
 
-<br>
-val sigT_rect : ('a1 -&gt; 'a2 -&gt; 'a3) -&gt; ('a1, 'a2) sigT -&gt; 'a3 *<br>
-<pre><span id="VALsigT_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sigT_rect.html">sigT_rect</a></span> : <code class="type">('a -> 'b -> 'c) -> ('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'c</code></pre><br>
-val sigT_rec : ('a1 -&gt; 'a2 -&gt; 'a3) -&gt; ('a1, 'a2) sigT -&gt; 'a3 *<br>
-<pre><span id="VALsigT_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sigT_rec.html">sigT_rec</a></span> : <code class="type">('a -> 'b -> 'c) -> ('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'c</code></pre><br><code><span id="TYPEsigT2"><span class="keyword">type</span> <code class="type">('a, 'b, 'c)</code> sigT2</span> = </code><table class="typetable">
+<pre><span id="VALsigT_rect"><span class="keyword">val</span> sigT_rect</span> : <code class="type">('a -> 'b -> 'c) -> ('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'c</code></pre><pre><span id="VALsigT_rec"><span class="keyword">val</span> sigT_rec</span> : <code class="type">('a -> 'b -> 'c) -> ('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'c</code></pre><br><code><span id="TYPEsigT2"><span class="keyword">type</span> <code class="type">('a, 'b, 'c)</code> sigT2</span> = </code><table class="typetable">
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
@@ -66,23 +56,7 @@ val sigT_rec : ('a1 -&gt; 'a2 -&gt; 'a3) -&gt; ('a1, 'a2) sigT -&gt; 'a3 *<br>
 </tr></table>
 
 
-<br>
-val sigT2_rect :
-    ('a1 -&gt; 'a2 -&gt; 'a3 -&gt; 'a4) -&gt; ('a1, 'a2, 'a3) sigT2 -&gt; 'a4 *<br>
-<pre><span id="VALsigT2_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sigT2_rect.html">sigT2_rect</a></span> : <code class="type">('a -> 'b -> 'c -> 'd) -> ('a, 'b, 'c) <a href="Specif.html#TYPEsigT2">sigT2</a> -> 'd</code></pre><br>
-val sigT2_rec :
-    ('a1 -&gt; 'a2 -&gt; 'a3 -&gt; 'a4) -&gt; ('a1, 'a2, 'a3) sigT2 -&gt; 'a4 *<br>
-<pre><span id="VALsigT2_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sigT2_rec.html">sigT2_rec</a></span> : <code class="type">('a -> 'b -> 'c -> 'd) -> ('a, 'b, 'c) <a href="Specif.html#TYPEsigT2">sigT2</a> -> 'd</code></pre><br>
-val proj1_sig : 'a1 -&gt; 'a1 *<br>
-<pre><span id="VALproj1_sig"><span class="keyword">val</span> <a href="code_VALSpecif.proj1_sig.html">proj1_sig</a></span> : <code class="type">'a -> 'a</code></pre><br>
-val projT1 : ('a1, 'a2) sigT -&gt; 'a1 *<br>
-<pre><span id="VALprojT1"><span class="keyword">val</span> <a href="code_VALSpecif.projT1.html">projT1</a></span> : <code class="type">('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'a</code></pre><br>
-val projT2 : ('a1, 'a2) sigT -&gt; 'a2 *<br>
-<pre><span id="VALprojT2"><span class="keyword">val</span> <a href="code_VALSpecif.projT2.html">projT2</a></span> : <code class="type">('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'b</code></pre><br>
-val sig_of_sigT : ('a1, __) sigT -&gt; 'a1 *<br>
-<pre><span id="VALsig_of_sigT"><span class="keyword">val</span> <a href="code_VALSpecif.sig_of_sigT.html">sig_of_sigT</a></span> : <code class="type">('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'a</code></pre><br>
-val sigT_of_sig : 'a1 -&gt; ('a1, __) sigT *<br>
-<pre><span id="VALsigT_of_sig"><span class="keyword">val</span> <a href="code_VALSpecif.sigT_of_sig.html">sigT_of_sig</a></span> : <code class="type">'a -> ('a, Obj.t) <a href="Specif.html#TYPEsigT">sigT</a></code></pre><br><code><span id="TYPEsumbool"><span class="keyword">type</span> <code class="type"></code>sumbool</span> = </code><table class="typetable">
+<pre><span id="VALsigT2_rect"><span class="keyword">val</span> sigT2_rect</span> : <code class="type">('a -> 'b -> 'c -> 'd) -> ('a, 'b, 'c) <a href="Specif.html#TYPEsigT2">sigT2</a> -> 'd</code></pre><pre><span id="VALsigT2_rec"><span class="keyword">val</span> sigT2_rec</span> : <code class="type">('a -> 'b -> 'c -> 'd) -> ('a, 'b, 'c) <a href="Specif.html#TYPEsigT2">sigT2</a> -> 'd</code></pre><pre><span id="VALproj1_sig"><span class="keyword">val</span> proj1_sig</span> : <code class="type">'a -> 'a</code></pre><pre><span id="VALprojT1"><span class="keyword">val</span> projT1</span> : <code class="type">('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'a</code></pre><pre><span id="VALprojT2"><span class="keyword">val</span> projT2</span> : <code class="type">('a, 'b) <a href="Specif.html#TYPEsigT">sigT</a> -> 'b</code></pre><pre><span id="VALsig_of_sigT"><span class="keyword">val</span> sig_of_sigT</span> : <code class="type">('a, Specif.__) <a href="Specif.html#TYPEsigT">sigT</a> -> 'a</code></pre><pre><span id="VALsigT_of_sig"><span class="keyword">val</span> sigT_of_sig</span> : <code class="type">'a -> ('a, Specif.__) <a href="Specif.html#TYPEsigT">sigT</a></code></pre><br><code><span id="TYPEsumbool"><span class="keyword">type</span> <code class="type"></code>sumbool</span> = </code><table class="typetable">
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
@@ -99,11 +73,7 @@ val sigT_of_sig : 'a1 -&gt; ('a1, __) sigT *<br>
 </tr></table>
 
 
-<br>
-val sumbool_rect : (__ -&gt; 'a1) -&gt; (__ -&gt; 'a1) -&gt; sumbool -&gt; 'a1 *<br>
-<pre><span id="VALsumbool_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sumbool_rect.html">sumbool_rect</a></span> : <code class="type">(Obj.t -> 'a) -> (Obj.t -> 'a) -> <a href="Specif.html#TYPEsumbool">sumbool</a> -> 'a</code></pre><br>
-val sumbool_rec : (__ -&gt; 'a1) -&gt; (__ -&gt; 'a1) -&gt; sumbool -&gt; 'a1 *<br>
-<pre><span id="VALsumbool_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sumbool_rec.html">sumbool_rec</a></span> : <code class="type">(Obj.t -> 'a) -> (Obj.t -> 'a) -> <a href="Specif.html#TYPEsumbool">sumbool</a> -> 'a</code></pre><br><code><span id="TYPEsumor"><span class="keyword">type</span> <code class="type">'a</code> sumor</span> = </code><table class="typetable">
+<pre><span id="VALsumbool_rect"><span class="keyword">val</span> sumbool_rect</span> : <code class="type">(Specif.__ -> 'a) -> (Specif.__ -> 'a) -> <a href="Specif.html#TYPEsumbool">sumbool</a> -> 'a</code></pre><pre><span id="VALsumbool_rec"><span class="keyword">val</span> sumbool_rec</span> : <code class="type">(Specif.__ -> 'a) -> (Specif.__ -> 'a) -> <a href="Specif.html#TYPEsumbool">sumbool</a> -> 'a</code></pre><br><code><span id="TYPEsumor"><span class="keyword">type</span> <code class="type">'a</code> sumor</span> = </code><table class="typetable">
 <tr>
 <td align="left" valign="top" >
 <code><span class="keyword">|</span></code></td>
@@ -120,27 +90,6 @@ val sumbool_rec : (__ -&gt; 'a1) -&gt; (__ -&gt; 'a1) -&gt; sumbool -&gt; 'a1 *<
 </tr></table>
 
 
-<br>
-val sumor_rect : ('a1 -&gt; 'a2) -&gt; (__ -&gt; 'a2) -&gt; 'a1 sumor -&gt; 'a2 *<br>
-<pre><span id="VALsumor_rect"><span class="keyword">val</span> <a href="code_VALSpecif.sumor_rect.html">sumor_rect</a></span> : <code class="type">('a -> 'b) -> (Obj.t -> 'b) -> 'a <a href="Specif.html#TYPEsumor">sumor</a> -> 'b</code></pre><br>
-val sumor_rec : ('a1 -&gt; 'a2) -&gt; (__ -&gt; 'a2) -&gt; 'a1 sumor -&gt; 'a2 *<br>
-<pre><span id="VALsumor_rec"><span class="keyword">val</span> <a href="code_VALSpecif.sumor_rec.html">sumor_rec</a></span> : <code class="type">('a -> 'b) -> (Obj.t -> 'b) -> 'a <a href="Specif.html#TYPEsumor">sumor</a> -> 'b</code></pre><br>
-val coq_Choice : ('a1 -&gt; 'a2) -&gt; ('a1 -&gt; 'a2) *<br>
-<pre><span id="VALcoq_Choice"><span class="keyword">val</span> <a href="code_VALSpecif.coq_Choice.html">coq_Choice</a></span> : <code class="type">('a -> 'b) -> 'a -> 'b</code></pre><br>
-val coq_Choice2 :
-    ('a1 -&gt; ('a2, 'a3) sigT) -&gt; ('a1 -&gt; 'a2, 'a1 -&gt; 'a3) sigT *<br>
-<pre><span id="VALcoq_Choice2"><span class="keyword">val</span> <a href="code_VALSpecif.coq_Choice2.html">coq_Choice2</a></span> : <code class="type">('a -> ('b, 'c) <a href="Specif.html#TYPEsigT">sigT</a>) -> ('a -> 'b, 'a -> 'c) <a href="Specif.html#TYPEsigT">sigT</a></code></pre><br>
-val bool_choice : ('a1 -&gt; sumbool) -&gt; ('a1 -&gt; bool) *<br>
-<pre><span id="VALbool_choice"><span class="keyword">val</span> <a href="code_VALSpecif.bool_choice.html">bool_choice</a></span> : <code class="type">('a -> <a href="Specif.html#TYPEsumbool">sumbool</a>) -> 'a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a></code></pre><br>
-val dependent_choice : ('a1 -&gt; 'a1) -&gt; 'a1 -&gt; (nat -&gt; 'a1) *<br>
-<pre><span id="VALdependent_choice"><span class="keyword">val</span> <a href="code_VALSpecif.dependent_choice.html">dependent_choice</a></span> : <code class="type">('a -> 'a) -> 'a -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a</code></pre><pre><span id="TYPEcoq_Exc"><span class="keyword">type</span> <code class="type">'a</code> coq_Exc</span> = <code class="type">'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code> </pre>
+<pre><span id="VALsumor_rect"><span class="keyword">val</span> sumor_rect</span> : <code class="type">('a -> 'b) -> (Specif.__ -> 'b) -> 'a <a href="Specif.html#TYPEsumor">sumor</a> -> 'b</code></pre><pre><span id="VALsumor_rec"><span class="keyword">val</span> sumor_rec</span> : <code class="type">('a -> 'b) -> (Specif.__ -> 'b) -> 'a <a href="Specif.html#TYPEsumor">sumor</a> -> 'b</code></pre><pre><span id="VALcoq_Choice"><span class="keyword">val</span> coq_Choice</span> : <code class="type">('a -> 'b) -> 'a -> 'b</code></pre><pre><span id="VALcoq_Choice2"><span class="keyword">val</span> coq_Choice2</span> : <code class="type">('a -> ('b, 'c) <a href="Specif.html#TYPEsigT">sigT</a>) -> ('a -> 'b, 'a -> 'c) <a href="Specif.html#TYPEsigT">sigT</a></code></pre><pre><span id="VALbool_choice"><span class="keyword">val</span> bool_choice</span> : <code class="type">('a -> <a href="Specif.html#TYPEsumbool">sumbool</a>) -> 'a -> <a href="Datatypes.html#TYPEbool">Datatypes.bool</a></code></pre><pre><span id="VALdependent_choice"><span class="keyword">val</span> dependent_choice</span> : <code class="type">('a -> 'a) -> 'a -> <a href="Datatypes.html#TYPEnat">Datatypes.nat</a> -> 'a</code></pre><pre><span id="TYPEcoq_Exc"><span class="keyword">type</span> <code class="type">'a</code> coq_Exc</span> = <code class="type">'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code> </pre>
 
-<br>
-val value : 'a1 -&gt; 'a1 option *<br>
-<pre><span id="VALvalue"><span class="keyword">val</span> <a href="code_VALSpecif.value.html">value</a></span> : <code class="type">'a -> 'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><br>
-val error : 'a1 option *<br>
-<pre><span id="VALerror"><span class="keyword">val</span> <a href="code_VALSpecif.error.html">error</a></span> : <code class="type">'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><br>
-val except : __ -&gt; 'a1 *<br>
-<pre><span id="VALexcept"><span class="keyword">val</span> <a href="code_VALSpecif.except.html">except</a></span> : <code class="type">'a -> 'b</code></pre><br>
-val absurd_set : __ -&gt; 'a1 *<br>
-<pre><span id="VALabsurd_set"><span class="keyword">val</span> <a href="code_VALSpecif.absurd_set.html">absurd_set</a></span> : <code class="type">'a -> 'b</code></pre></body></html>
+<pre><span id="VALvalue"><span class="keyword">val</span> value</span> : <code class="type">'a -> 'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><pre><span id="VALerror"><span class="keyword">val</span> error</span> : <code class="type">'a <a href="Datatypes.html#TYPEoption">Datatypes.option</a></code></pre><pre><span id="VALexcept"><span class="keyword">val</span> except</span> : <code class="type">Specif.__ -> 'a</code></pre><pre><span id="VALabsurd_set"><span class="keyword">val</span> absurd_set</span> : <code class="type">Specif.__ -> 'a</code></pre></body></html>

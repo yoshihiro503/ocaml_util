@@ -10,9 +10,24 @@
 <link title="May" rel="Chapter" href="May.html">
 <link title="Logic" rel="Chapter" href="Logic.html">
 <link title="Specif" rel="Chapter" href="Specif.html">
-<link title="List" rel="Chapter" href="List.html">
-<link title="Streams" rel="Chapter" href="Streams.html">
-<link title="Util" rel="Chapter" href="Util.html"><title>Logic</title>
+<link title="CoqList" rel="Chapter" href="CoqList.html">
+<link title="CoqStreams" rel="Chapter" href="CoqStreams.html">
+<link title="Util" rel="Chapter" href="Util.html">
+<link title="StringUtil" rel="Chapter" href="StringUtil.html">
+<link title="Utf16" rel="Chapter" href="Utf16.html">
+<link title="Base64" rel="Chapter" href="Base64.html"><title>Logic</title>
 </head>
 <body>
-<code class="code"><span class="keyword">sig</span>&nbsp;&nbsp;<span class="keyword">end</span></code></body></html>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;__&nbsp;=&nbsp;<span class="constructor">Obj</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;coq_True_rect&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;coq_True_rec&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;coq_False_rect&nbsp;:&nbsp;<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;coq_False_rec&nbsp;:&nbsp;<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;and_rect&nbsp;:&nbsp;(<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a)&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;and_rec&nbsp;:&nbsp;(<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Logic</span>.__&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a)&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;eq_rect&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;eq_rec&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;eq_rec_r&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;eq_rect_r&nbsp;:&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>a&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="keywordsign">'</span>b<br>
+<span class="keyword">end</span></code></body></html>

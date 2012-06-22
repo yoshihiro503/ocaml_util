@@ -15,9 +15,12 @@
 <link title="May" rel="Chapter" href="May.html">
 <link title="Logic" rel="Chapter" href="Logic.html">
 <link title="Specif" rel="Chapter" href="Specif.html">
-<link title="List" rel="Chapter" href="List.html">
-<link title="Streams" rel="Chapter" href="Streams.html">
-<link title="Util" rel="Chapter" href="Util.html"><title>May</title>
+<link title="CoqList" rel="Chapter" href="CoqList.html">
+<link title="CoqStreams" rel="Chapter" href="CoqStreams.html">
+<link title="Util" rel="Chapter" href="Util.html">
+<link title="StringUtil" rel="Chapter" href="StringUtil.html">
+<link title="Utf16" rel="Chapter" href="Utf16.html">
+<link title="Base64" rel="Chapter" href="Base64.html"><title>May</title>
 </head>
 <body>
 <div class="navbar"><a href="Datatypes.html">Previous</a>
@@ -26,14 +29,7 @@
 </div>
 <center><h1>Module <a href="type_May.html">May</a></h1></center>
 <br>
-<pre><span class="keyword">module</span> May: <code class="code">sig</code> <a href="May.html">..</a> <code class="code">end</code></pre>val map : ('a1 -&gt; 'a2) -&gt; 'a1 t -&gt; 'a2 t *<br>
-<hr width="100%">
+<pre><span class="keyword">module</span> May: <code class="code">sig</code> <a href="May.html">..</a> <code class="code">end</code></pre><hr width="100%">
 <pre><span id="TYPEt"><span class="keyword">type</span> <code class="type">'a</code> t</span> = <code class="type">('a, exn) <a href="Datatypes.html#TYPEsum">Datatypes.sum</a></code> </pre>
 
-<br>
-val map : ('a1 -&gt; 'a2) -&gt; 'a1 t -&gt; 'a2 t *<br>
-<pre><span id="VALmap"><span class="keyword">val</span> <a href="code_VALMay.map.html">map</a></span> : <code class="type">('a -> 'b) -> ('a, 'c) <a href="Datatypes.html#TYPEsum">Datatypes.sum</a> -> ('b, 'c) <a href="Datatypes.html#TYPEsum">Datatypes.sum</a></code></pre><br>
-val get_or_else : 'a1 -&gt; 'a1 t -&gt; 'a1 *<br>
-<pre><span id="VALget_or_else"><span class="keyword">val</span> <a href="code_VALMay.get_or_else.html">get_or_else</a></span> : <code class="type">'a -> ('a, 'b) <a href="Datatypes.html#TYPEsum">Datatypes.sum</a> -> 'a</code></pre><br>
-val dmap : 'a2 -&gt; ('a1 -&gt; 'a2) -&gt; 'a1 t -&gt; 'a2 *<br>
-<pre><span id="VALdmap"><span class="keyword">val</span> <a href="code_VALMay.dmap.html">dmap</a></span> : <code class="type">'a -> ('b -> 'a) -> ('b, 'c) <a href="Datatypes.html#TYPEsum">Datatypes.sum</a> -> 'a</code></pre></body></html>
+<pre><span id="VALmap"><span class="keyword">val</span> map</span> : <code class="type">('a -> 'b) -> 'a <a href="May.html#TYPEt">t</a> -> 'b <a href="May.html#TYPEt">t</a></code></pre><pre><span id="VALget_or_else"><span class="keyword">val</span> get_or_else</span> : <code class="type">'a -> 'a <a href="May.html#TYPEt">t</a> -> 'a</code></pre><pre><span id="VALdmap"><span class="keyword">val</span> dmap</span> : <code class="type">'a -> ('b -> 'a) -> 'b <a href="May.html#TYPEt">t</a> -> 'a</code></pre></body></html>

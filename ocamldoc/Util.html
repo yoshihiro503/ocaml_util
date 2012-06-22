@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
 <link rel="Start" href="index.html">
-<link rel="previous" href="Streams.html">
+<link rel="previous" href="CoqStreams.html">
+<link rel="next" href="StringUtil.html">
 <link rel="Up" href="index.html">
 <link title="Index of types" rel=Appendix href="index_types.html">
 <link title="Index of values" rel=Appendix href="index_values.html">
@@ -14,18 +15,22 @@
 <link title="May" rel="Chapter" href="May.html">
 <link title="Logic" rel="Chapter" href="Logic.html">
 <link title="Specif" rel="Chapter" href="Specif.html">
-<link title="List" rel="Chapter" href="List.html">
-<link title="Streams" rel="Chapter" href="Streams.html">
-<link title="Util" rel="Chapter" href="Util.html"><title>Util</title>
+<link title="CoqList" rel="Chapter" href="CoqList.html">
+<link title="CoqStreams" rel="Chapter" href="CoqStreams.html">
+<link title="Util" rel="Chapter" href="Util.html">
+<link title="StringUtil" rel="Chapter" href="StringUtil.html">
+<link title="Utf16" rel="Chapter" href="Utf16.html">
+<link title="Base64" rel="Chapter" href="Base64.html"><title>Util</title>
 </head>
 <body>
-<div class="navbar"><a href="Streams.html">Previous</a>
+<div class="navbar"><a href="CoqStreams.html">Previous</a>
 &nbsp;<a href="index.html">Up</a>
-&nbsp;</div>
+&nbsp;<a href="StringUtil.html">Next</a>
+</div>
 <center><h1>Module <a href="type_Util.html">Util</a></h1></center>
 <br>
 <pre><span class="keyword">module</span> Util: <code class="code">sig</code> <a href="Util.html">..</a> <code class="code">end</code></pre><hr width="100%">
 <pre><span class="keyword">include</span> <a href="FromCoq.html">FromCoq</a></pre>
-<pre><span id="VAL(@@)"><span class="keyword">val</span> <a href="code_VALUtil.(_at__at_).html">(@@)</a></span> : <code class="type">('a -> 'b) -> 'a -> 'b</code></pre><pre><span id="VAL($)"><span class="keyword">val</span> <a href="code_VALUtil.(_dollar_).html">($)</a></span> : <code class="type">('a -> 'b) -> ('c -> 'a) -> 'c -> 'b</code></pre><pre><span id="VAL(|>)"><span class="keyword">val</span> <a href="code_VALUtil.(_pipe__gt_).html">(|&gt;)</a></span> : <code class="type">'a -> ('a -> 'b) -> 'b</code></pre><pre><span id="VALprintln"><span class="keyword">val</span> <a href="code_VALUtil.println.html">println</a></span> : <code class="type">string -> unit</code></pre><pre><span id="VALtee"><span class="keyword">val</span> <a href="code_VALUtil.tee.html">tee</a></span> : <code class="type">('a -> 'b) -> 'a -> 'a</code></pre><pre><span id="TYPEmay"><span class="keyword">type</span> <code class="type">'a</code> may</span> = <code class="type">('a, exn) sum</code> </pre>
+<pre><span id="VAL(@@)"><span class="keyword">val</span> (@@)</span> : <code class="type">('a -> 'b) -> 'a -> 'b</code></pre><pre><span id="VAL($)"><span class="keyword">val</span> ($)</span> : <code class="type">('a -> 'b) -> ('c -> 'a) -> 'c -> 'b</code></pre><pre><span id="VAL(|>)"><span class="keyword">val</span> (|&gt;)</span> : <code class="type">'a -> ('a -> 'b) -> 'b</code></pre><pre><span id="VALprintln"><span class="keyword">val</span> println</span> : <code class="type">string -> unit</code></pre><pre><span id="VALtee"><span class="keyword">val</span> tee</span> : <code class="type">('a -> 'b) -> 'a -> 'a</code></pre><pre><span id="VAL(!%)"><span class="keyword">val</span> (!%)</span> : <code class="type">('a, unit, string) Pervasives.format -> 'a</code></pre><pre><span id="VALslist"><span class="keyword">val</span> slist</span> : <code class="type">string -> ('a -> string) -> 'a list -> string</code></pre><pre><span id="TYPEmay"><span class="keyword">type</span> <code class="type">'a</code> may</span> = <code class="type">'a <a href="May.html#TYPEt">May.t</a></code> </pre>
 
-</body></html>
+<pre><span id="VALmay"><span class="keyword">val</span> may</span> : <code class="type">('a -> 'b) -> 'a -> ('b, exn) sum</code></pre><pre><span id="VALusing"><span class="keyword">val</span> using</span> : <code class="type">'a -> ('a -> unit) -> ('a -> 'b) -> 'b</code></pre><pre><span id="VALusing_in"><span class="keyword">val</span> using_in</span> : <code class="type">Pervasives.in_channel -> (Pervasives.in_channel -> 'a) -> 'a</code></pre><pre><span id="VALusing_out"><span class="keyword">val</span> using_out</span> : <code class="type">Pervasives.out_channel -> (Pervasives.out_channel -> 'a) -> 'a</code></pre></body></html>

@@ -15,9 +15,12 @@
 <link title="May" rel="Chapter" href="May.html">
 <link title="Logic" rel="Chapter" href="Logic.html">
 <link title="Specif" rel="Chapter" href="Specif.html">
-<link title="List" rel="Chapter" href="List.html">
-<link title="Streams" rel="Chapter" href="Streams.html">
-<link title="Util" rel="Chapter" href="Util.html"><title>Logic</title>
+<link title="CoqList" rel="Chapter" href="CoqList.html">
+<link title="CoqStreams" rel="Chapter" href="CoqStreams.html">
+<link title="Util" rel="Chapter" href="Util.html">
+<link title="StringUtil" rel="Chapter" href="StringUtil.html">
+<link title="Utf16" rel="Chapter" href="Utf16.html">
+<link title="Base64" rel="Chapter" href="Base64.html"><title>Logic</title>
 </head>
 <body>
 <div class="navbar"><a href="May.html">Previous</a>
@@ -26,28 +29,7 @@
 </div>
 <center><h1>Module <a href="type_Logic.html">Logic</a></h1></center>
 <br>
-<pre><span class="keyword">module</span> Logic: <code class="code">sig</code> <a href="Logic.html">..</a> <code class="code">end</code></pre>val coq_True_rect : 'a1 -&gt; 'a1 *<br>
-<hr width="100%">
+<pre><span class="keyword">module</span> Logic: <code class="code">sig</code> <a href="Logic.html">..</a> <code class="code">end</code></pre><hr width="100%">
 <pre><span id="TYPE__"><span class="keyword">type</span> <code class="type"></code>__</span> = <code class="type">Obj.t</code> </pre>
 
-<pre><span id="VAL__"><span class="keyword">val</span> <a href="code_VALLogic.__.html">__</a></span> : <code class="type">Obj.t</code></pre><br>
-val coq_True_rect : 'a1 -&gt; 'a1 *<br>
-<pre><span id="VALcoq_True_rect"><span class="keyword">val</span> <a href="code_VALLogic.coq_True_rect.html">coq_True_rect</a></span> : <code class="type">'a -> 'a</code></pre><br>
-val coq_True_rec : 'a1 -&gt; 'a1 *<br>
-<pre><span id="VALcoq_True_rec"><span class="keyword">val</span> <a href="code_VALLogic.coq_True_rec.html">coq_True_rec</a></span> : <code class="type">'a -> 'a</code></pre><br>
-val coq_False_rect : __ -&gt; 'a1 *<br>
-<pre><span id="VALcoq_False_rect"><span class="keyword">val</span> <a href="code_VALLogic.coq_False_rect.html">coq_False_rect</a></span> : <code class="type">'a -> 'b</code></pre><br>
-val coq_False_rec : __ -&gt; 'a1 *<br>
-<pre><span id="VALcoq_False_rec"><span class="keyword">val</span> <a href="code_VALLogic.coq_False_rec.html">coq_False_rec</a></span> : <code class="type">'a -> 'b</code></pre><br>
-val and_rect : (__ -&gt; __ -&gt; 'a1) -&gt; 'a1 *<br>
-<pre><span id="VALand_rect"><span class="keyword">val</span> <a href="code_VALLogic.and_rect.html">and_rect</a></span> : <code class="type">(Obj.t -> Obj.t -> 'a) -> 'a</code></pre><br>
-val and_rec : (__ -&gt; __ -&gt; 'a1) -&gt; 'a1 *<br>
-<pre><span id="VALand_rec"><span class="keyword">val</span> <a href="code_VALLogic.and_rec.html">and_rec</a></span> : <code class="type">(Obj.t -> Obj.t -> 'a) -> 'a</code></pre><br>
-val eq_rect : 'a1 -&gt; 'a2 -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALeq_rect"><span class="keyword">val</span> <a href="code_VALLogic.eq_rect.html">eq_rect</a></span> : <code class="type">'a -> 'b -> 'c -> 'b</code></pre><br>
-val eq_rec : 'a1 -&gt; 'a2 -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALeq_rec"><span class="keyword">val</span> <a href="code_VALLogic.eq_rec.html">eq_rec</a></span> : <code class="type">'a -> 'b -> 'c -> 'b</code></pre><br>
-val eq_rec_r : 'a1 -&gt; 'a2 -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALeq_rec_r"><span class="keyword">val</span> <a href="code_VALLogic.eq_rec_r.html">eq_rec_r</a></span> : <code class="type">'a -> 'b -> 'c -> 'b</code></pre><br>
-val eq_rect_r : 'a1 -&gt; 'a2 -&gt; 'a1 -&gt; 'a2 *<br>
-<pre><span id="VALeq_rect_r"><span class="keyword">val</span> <a href="code_VALLogic.eq_rect_r.html">eq_rect_r</a></span> : <code class="type">'a -> 'b -> 'c -> 'b</code></pre></body></html>
+<pre><span id="VALcoq_True_rect"><span class="keyword">val</span> coq_True_rect</span> : <code class="type">'a -> 'a</code></pre><pre><span id="VALcoq_True_rec"><span class="keyword">val</span> coq_True_rec</span> : <code class="type">'a -> 'a</code></pre><pre><span id="VALcoq_False_rect"><span class="keyword">val</span> coq_False_rect</span> : <code class="type">Logic.__ -> 'a</code></pre><pre><span id="VALcoq_False_rec"><span class="keyword">val</span> coq_False_rec</span> : <code class="type">Logic.__ -> 'a</code></pre><pre><span id="VALand_rect"><span class="keyword">val</span> and_rect</span> : <code class="type">(Logic.__ -> Logic.__ -> 'a) -> 'a</code></pre><pre><span id="VALand_rec"><span class="keyword">val</span> and_rec</span> : <code class="type">(Logic.__ -> Logic.__ -> 'a) -> 'a</code></pre><pre><span id="VALeq_rect"><span class="keyword">val</span> eq_rect</span> : <code class="type">'a -> 'b -> 'a -> 'b</code></pre><pre><span id="VALeq_rec"><span class="keyword">val</span> eq_rec</span> : <code class="type">'a -> 'b -> 'a -> 'b</code></pre><pre><span id="VALeq_rec_r"><span class="keyword">val</span> eq_rec_r</span> : <code class="type">'a -> 'b -> 'a -> 'b</code></pre><pre><span id="VALeq_rect_r"><span class="keyword">val</span> eq_rect_r</span> : <code class="type">'a -> 'b -> 'a -> 'b</code></pre></body></html>
