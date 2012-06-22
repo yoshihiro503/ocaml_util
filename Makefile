@@ -35,7 +35,6 @@ MLFILES:= \
 	CoqStreams.ml \
 	util.ml \
 	stringUtil.ml \
-	yParser.ml \
 	utf16.ml \
 	base64.ml
 CMOFILES:=$(MLFILES:.ml=.cmo)
